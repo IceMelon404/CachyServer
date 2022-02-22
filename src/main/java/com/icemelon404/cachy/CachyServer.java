@@ -11,6 +11,6 @@ public class CachyServer {
         CachyConfig config = new ConfigMock();
         CachyStorageBootstrap storageBootstrap = new CachyStorageBootstrap(config);
         CachyServerBootstrap server = new CachyServerBootstrap(config);
-        server.getServer(storageBootstrap.runStorage());
+        server.getServer(storageBootstrap.runStorage()).startServer();
     }
 }
